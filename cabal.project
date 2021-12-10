@@ -1,0 +1,12 @@
+source-repository-package
+  type: git
+  location: https://github.com/SPY/haskell-wasm.git
+
+source-repository-package
+  type: git
+  location: https://github.com/llvm-hs/llvm-hs.git
+  tag: llvm-12
+  subdir: llvm-hs
+  subdir: llvm-hs-pure
+
+packages: ./nwasm.cabal

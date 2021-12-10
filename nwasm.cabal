@@ -1,0 +1,29 @@
+cabal-version:      2.4
+name:               nwasm
+version:            0.1.0
+synopsis:           WebAssembly to native code compiler
+homepage:           https://github.com/silversquirl/nwasm
+bug-reports:        https://github.com/silversquirl/nwasm/issues
+license:            MIT
+license-file:       LICENSE
+author:             Silver
+maintainer:         silver@silv.re
+
+-- A copyright notice.
+-- copyright:
+category:           Development
+
+executable nwasm
+    main-is:          Main.hs
+
+    -- Modules included in this executable, other than Main.
+    -- other-modules:
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:
+	    , llvm-hs ^>= 12.0.0
+	    , wasm ^>= 1.0.1
+	    , base ^>=4.14.1.0
+    hs-source-dirs:   src
+    default-language: Haskell2010
